@@ -30,7 +30,7 @@ python test_medical_loaders.py
 
 ## 💻 Code Templates
 
-### Template 1: BCI-IV-2a (Motor Imagery EEG)
+### 1: BCI-IV-2a (Motor Imagery EEG)
 
 ```python
 from data_loaders.bci_loader import BCIDataLoader
@@ -47,7 +47,7 @@ for batch_x, batch_y in train_loader:
     output = model(batch_x)
 ```
 
-### Template 2: FACED (Emotion Recognition EEG)
+### 2: FACED (Emotion Recognition EEG)
 
 ```python
 from data_loaders.faced_loader import FACEDDataLoader
@@ -74,7 +74,7 @@ for features, labels, subjects in train:
     output = model(features)
 ```
 
-### Template 4: SeizeIT1 (EEG-fMRI Seizure)
+### 4: SeizeIT1 (EEG-fMRI Seizure)
 
 ```python
 from data_loaders.seizeit_loader import SeizeITLoader
@@ -88,7 +88,7 @@ for batch in train:
     labels = batch[1]  # Ictal vs interictal
 ```
 
-### Template 5: BUSI (Breast Ultrasound)
+### 5: BUSI (Breast Ultrasound)
 
 ```python
 from data_loaders.busi_loader import BUSILoader
