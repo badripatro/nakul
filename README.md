@@ -20,6 +20,12 @@
 
 **Medical diagnosis relies on integrating diverse data modalities—EEG, fMRI, ultrasound, and more—yet existing models process each modality in isolation.**
 
+<p align="center">
+  <img src="fig/motivation_problem_statement.png" width="900">
+  <br>
+  <em>Motivation and Problem Statement: Existing medical imaging models struggle with multi-modal data and graph structures</em>
+</p>
+
 Current medical imaging approaches face critical limitations:
 
 - **❌ Modality-Specific Architectures**: Separate models for EEG (temporal), fMRI (spatial), and images (2D/3D)
@@ -48,7 +54,7 @@ Current medical imaging approaches face critical limitations:
 ## 🏗️ Architecture: Spectral-Graph State Space Layers
 
 <p align="center">
-  <img src="fig/nakul_architecture.png" width="900">
+  <img src="fig/nakul_architech.jpg" width="900">
   <br>
   <em>NAKUL-Med processes medical data through spectral graph decomposition combined with state space dynamics</em>
 </p>
@@ -92,6 +98,12 @@ Input-dependent modulation for different medical modalities:
 ---
 
 ## 📊 Experimental Results: 5 Medical Imaging Benchmarks
+
+<p align="center">
+  <img src="fig/nakul_sota_multiple_benchmark.png" width="900">
+  <br>
+  <em>NAKUL-Med achieves state-of-the-art performance across all 5 medical imaging benchmarks</em>
+</p>
 
 ### Dataset Coverage
 
@@ -272,6 +284,12 @@ Medical imaging data has unique characteristics that existing models fail to cap
 
 ### Key Advantages
 
+<p align="center">
+  <img src="fig/nakul_efficiency.png" width="850">
+  <br>
+  <em>Efficiency comparison: NAKUL-Med achieves superior performance with lower computational cost</em>
+</p>
+
 1. **Natural Graph Representation** — Brain connectivity, spatial neighborhoods processed as graphs
 2. **Spectral Global Reasoning** — All graph nodes interact simultaneously via eigendecomposition
 3. **Temporal Dynamics** — SSM component preserves sequential dependencies in EEG/fMRI signals  
@@ -281,6 +299,12 @@ Medical imaging data has unique characteristics that existing models fail to cap
 ---
 
 ## 📈 Ablation Studies & Analysis
+
+<p align="center">
+  <img src="fig/nakul_ablation.png" width="850">
+  <br>
+  <em>Ablation study showing the contribution of each component across all medical benchmarks</em>
+</p>
 
 ### Component Contributions
 
@@ -684,25 +708,27 @@ Coming soon! We will release pre-trained NAKUL-Med models for all 5 medical imag
 ## 🎨 Poster & Visualizations
 
 <p align="center">
-  <img src="fig/nakul_poster.png" width="900">
+  <a href="fig/Nakul_CVPR_FINDINGS_Poster_final.pdf">
+    <img src="fig/nakul_sota_multiple_benchmark.png" width="900">
+  </a>
   <br>
-  <em>NAKUL-Med CVPR 2026 Poster - Spectral-Graph State Space Models for Medical Imaging</em>
+  <em>NAKUL-Med CVPR 2026 Findings Poster - Click to view full poster (<a href="fig/Nakul_CVPR_FINDINGS_Poster_final.pdf">PDF</a>)</em>
 </p>
 
 ### Architecture Visualization
 
 <p align="center">
-  <img src="fig/spectral_graph_ssm.png" width="800">
+  <img src="fig/nakul_architech.jpg" width="900">
   <br>
-  <em>Spectral-Graph SSM Layer: Combining graph spectral decomposition with state space dynamics</em>
+  <em>Spectral-Graph SSM Architecture: Combining graph spectral decomposition with state space dynamics</em>
 </p>
 
-### Results Across Medical Modalities
+### Comprehensive Results
 
 <p align="center">
-  <img src="fig/results_comparison.png" width="900">
+  <img src="fig/nakul_ablation.png" width="850">
   <br>
-  <em>NAKUL-Med achieves SOTA across diverse medical imaging tasks</em>
+  <em>Detailed ablation studies and performance analysis across medical modalities</em>
 </p>
 
 ---
